@@ -1,0 +1,19 @@
+This is a simple bot for Twitter.
+Its main and only function, so far, is retweet a message with a specific hashtag with a mention of its user.
+
+Please help me to improve it, because it does not know much about python, despite having it written in this language.
+
+Some interesting features for the future:
+-> Make a list, maybe with regex, with the hashtag.
+Because he makes an exact comparison of the hashtag that is placed on the script today.
+
+-> Make a error log.
+
+-> Auto Follow-Friday
+Complete with a list for something pre-programmed, but also enable the response to new people and an thank you
+
+-> Use a conf file
+Using a configuration file, maybe with XML, to set tokens, user, hashtag, list to the FF
+
+-> User Interface
+Make an administration interface in order to manipulate the configuration file, display the error log
