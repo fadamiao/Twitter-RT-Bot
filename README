@@ -1,6 +1,12 @@
 This is a simple bot for Twitter.
 Its main and only function, so far, is retweet a message with a specific hashtag with a mention of its user.
 
+
+OS which was made : Mac OS X 10.6 (a.k.a Snow Leopard)
+Language used : Python
+Version of Python used : 2.7.2
+
+
 Please help me to improve it, because it does not know much about python, despite having it written in this language.
 
 Some interesting features for the future:
@@ -17,3 +23,23 @@ Using a configuration file, maybe with XML, to set tokens, user, hashtag, list t
 
 -> User Interface
 Make an administration interface in order to manipulate the configuration file, display the error log
+
+
+======== How to use ========
+You need install all libs in LIbs.zip
+The order of installation is : 
+httplib
+simplejson
+simplegeo
+python-twitter
+
+To install you must enter each of the libs directory and run the following command: python setup.py install
+
+
+After this you will need the tokens that you get on Twitter Developers, put the hashtag to be monitored by its user
+
+
+======== CHANGE LOG ========
+0.1 - First Realease
+
+PS : Sorry for my misspell
