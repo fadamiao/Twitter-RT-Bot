@@ -1,14 +1,10 @@
 #! /usr/bin/python
 import twitter, time
 
-# Author = Fernando A. Damiao
-# Last Mod = dom 25 set 2011
+# Author : Fernando A. Damiao
+# Last Mod : wed 26 out 2011
 # Hosted on Git Hub : https://github.com/fa-damiao/Twitter-RT-Bot
 # Build and Tested on Mac OS X 10.6 (a.k.a Snow Leopard)
-
-# Next Feature = Use regex(?) for make a list with a variations of a hashtag
-# Next Feature = Make a error log
-# Next Feature = Auto #FF, make a list in XML with the users
 
 #Insert here the Tokens from Twitter Developers
 myconsumer_key = ''
@@ -34,9 +30,9 @@ while True:
     mentions = api.GetMentions(since_id = lastmention)
     print '=================================='
     for m in mentions:
-        text1 = m.text.replace('@perfil_da_aplicacao', '')
+        text1 = m.text.replace('@app_profile', '')
 	if m.user.screen_name == 'INSERTYOURUSERHERE':
-		print 'Oops try self RT'
+		print 'Oops attempt of self RT'
         elif (m.user.screen_name != 'INSERTYOURUSERHERE') and (text1.find('#INSERTTHEHASHTAG') >= 0):
                 status = api.PostUpdate('RT @' + m.user.screen_name + ': ' + m.text)
         else:
